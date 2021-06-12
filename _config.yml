@@ -1,0 +1,48 @@
+#基础配置
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: http://127.0.0.1:4000 # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+#静态资源
+css: /assets/css
+img: /assets/img
+js: /assets/js
+
+#插件支持
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
+  - jekyll-avatar
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-gist
+
+collections:
+  json:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: "" # 这里的空字符串表示项目中的所有文件
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+
+
+# Build settings
+theme: minima
+
+paginate: 3
+paginate_path: "page:num"
+
+

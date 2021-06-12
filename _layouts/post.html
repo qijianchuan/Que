@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    <header>
+        <div id="siteMeta">
+            <a href="#">Nomar</a><span>记录一段历史</span>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{site.url}}">首页</a>
+                </li>
+                <li>
+                    <a href="{{site.url}}/feed.xml">订阅</a>
+                </li>
+                <li>
+                    <a href="{{site.url}}/sitemap.xml">地图</a>
+                </li>
+                <li>
+                    <a href="{{site.url}}/tag.html">标签</a>
+                </li>
+                <li>
+                    <a href="{{site.url}}/category.html">分类</a>
+                </li>
+                <li>
+                    <a href="{{site.url}}/archive.html">归档</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="block-bar-right">
+            <span id="radius_search_wrap" class="radius-btn radius-btn-search" onmouseover="showSearch()" onmouseout="hideSearch()">
+                <input class="inner-search-input" type="text">
+                <em class="iconfont icon-search"></em>
+            </span>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <article class="article-single-post">
+                <article class="single-post-title">《{{page.title}}》
+                </article>
+                <article class="single-post-meta">
+                    分类：{% for category in page.categories %}<span class="single cat">{{category}}</span>{% endfor %} <br>标签：{% for tag in page.tags %}<span class="single tag">{{tag}}</span>{% endfor %} <br>来源：<a class="single search" href="https://www.baidu.com/s?wd={{site.url}}{{page.url}}">百度</a>
+                </article>
+                <article class="single-post-content">
+                    {{page.content}}
+                </article>
+            </article>
+        </main>
+        <aside>
+            <section class="block-ad">
+
+            </section>
+            <section class="block-tags">
+                <div class="block-header">
+                    <h4 class="iconfont icon-tag">标签</h4>
+                    <span class="tab-more"><a href="#"><i></i><i></i><i></i></a>
+                    </span>
+                </div>
+                <div class="block-wrap">
+                    <ul>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                        <a href="#">程序员</a>
+                    </ul>
+                </div>
+            </section>
+            <section class="block-cats">
+                <div class="block-header">
+                    <h4 class="iconfont icon-fenlei">分类</h4>
+                </div>
+                <div class="block-wrap">
+                    <ul>
+                        <li>编程【23】</li>
+                        <li>编程【23】</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="block-sponsor">
+                <div class="block-header">
+                    <h4 class="iconfont icon-zanzhu">赞助</h4>
+                </div>
+                <div class="block-wrap"></div>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <section class="block-partner">
+            <div class="block-header">
+                <h4 class=" iconfont icon-hezuo">合作伙伴</h4>
+            </div>
+            <div class="block-wrap">
+                <ul>
+                    <li>
+                        <a class="iconfont icon-github" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="block-flink ">
+            <div class="block-header">
+                <h4 class=" iconfont icon-hezuo">友情链接</h4>
+            </div>
+            <div class="block-wrap">
+                <ul>
+                    <li>
+                        <a href="#">软考</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="block-copyright">
+
+        </section>
+    </footer>
+
+</body>
+
+</html>
