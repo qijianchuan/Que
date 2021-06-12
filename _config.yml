@@ -2,7 +2,7 @@
 title: 技术博客
 email: your-email@example.com
 description: 
-baseurl:/Que  #  例如 /blog
+baseurl:/  #  例如 /blog
 url: https://qijianchuan.github.io # 网站域名. http://example.com
 
 
