@@ -7,9 +7,9 @@ url: https://qijianchuan.github.io # 网站域名. http://example.com
 
 
 #静态资源
-css: /assets/css
-img: /assets/img
-js: /assets/js
+css: /assets/css/
+img: /assets/img/
+js: /assets/js/
 
 #插件支持
 plugins:
