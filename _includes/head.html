@@ -2,8 +2,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">{% feed_meta %} {% seo %}
-    <link href="{{site.css}}/style.css" rel="stylesheet">
+    <link href="{{site.baseurl}}{{site.css}}/style.css" rel="stylesheet">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2346351_0vu4whehciwp.css">
-    <script src="{{site.js}}/index.js"></script>
+    <script src="{{site.baseurl}}{{site.js}}/index.js"></script>
     {% if page.mathjax %}{% include mathjax.html %}{% endif %}{% if page.title==标签页 %}{% include antv.html %}{% endif %}
 </head>
