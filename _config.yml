@@ -8,9 +8,9 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 #静态资源
-css: /assets/css
-img: /assets/img
-js: /assets/js
+css: Que/assets/css
+img: Que/assets/img
+js: Que/assets/js
 
 #插件支持
 plugins:
