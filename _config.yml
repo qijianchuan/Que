@@ -2,8 +2,8 @@
 title: Your awesome title
 email: your-email@example.com
 description: 
-baseurl: /Que # 网站目录, 例如 /blog
-url: https://qijianchuan.github.io # 网站域名. http://example.com
+baseurl:  # 网站目录, 例如 /blog
+url: https://qijianchuan.github.io/Que # 网站域名. http://example.com
 
 
 #静态资源
