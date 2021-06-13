@@ -38,7 +38,7 @@ defaults:
 # Build settings
 theme: minima
 
-paginate: 3
+paginate: 10
 paginate_path: "page:num"
 
 
