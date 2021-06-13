@@ -190,6 +190,10 @@ time {
     word-break: normal;
 }
 
+.single-post-content img{
+    max-width: 100%;
+}
+
 .single-post-meta .cat,
 .single-post-meta .tag,
 .single-post-meta .search {
