@@ -1,0 +1,41 @@
+<aside>
+            <section class="block-ad">
+
+            </section>
+            <section class="block-tags">
+                <div class="block-header">
+                    <h4 class="iconfont icon-tag">标签</h4>
+                    <span class="tab-more"><a href="#"><i></i><i></i><i></i></a>
+                    </span>
+                </div>
+                <div class="block-wrap">
+                    <ul>
+                        {% for tag in site.tags limit:15%} <a href="#">{{ tag[0]|slugify|capitalize}}</a> {% endfor %}
+                    </ul>
+                </div>
+            </section>
+            <section class="block-cats">
+                <div class="block-header">
+                    <h4 class="iconfont icon-fenlei">分类</h4>
+                </div>
+                <div class="block-wrap">
+                    <ul>
+                        {% for category in site.categories limit:15%}
+                        <li>{{ category[0]|slugify|capitalize}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+            <section class="block-cats">
+                <div class="block-header">
+                    <h4 class="iconfont icon-fenlei">分类</h4>
+                </div>
+                <div class="block-wrap"></div>
+            </section>
+            <section class="block-sponsor">
+                <div class="block-header">
+                    <h4 class="iconfont icon-zanzhu">赞助</h4>
+                </div>
+                <div class="block-wrap"></div>
+            </section>
+        </aside>
