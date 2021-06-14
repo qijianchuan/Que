@@ -129,7 +129,14 @@ header ul li {
     width: 1004px;
     height: auto;
     margin: 50px 138px 20px 138px;
-    overflow: hidden;
+    zoom:1;
+}
+.container::before,.container::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 main {
