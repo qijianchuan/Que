@@ -24,9 +24,11 @@
                 <article class="single-post-meta">
                     分类：{% for category in page.categories %}<span class="single cat">{{category}}</span>{% endfor %} <br>标签：{% for tag in page.tags %}<span class="single tag">{{tag}}</span>{% endfor %} <br>来源：<a class="single search" href="https://www.baidu.com/s?wd={{site.url}}{{page.url}}">百度</a>
                 </article>
+                {% include adsense.html %}
                 <article class="single-post-content">
                     {{page.content}}
                 </article>
+                {% include adsense.html %}
             </article>
         </main>
     {% include aside.html %}
