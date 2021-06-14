@@ -129,7 +129,6 @@ header ul li {
     width: 1004px;
     height: auto;
     margin: 50px 138px 20px 138px;
-    zoom:1;
 }
 .container::before,.container::after{
     content: "";
@@ -331,7 +330,6 @@ time {
 
 aside {
     position: sticky;
-    position:-webkit-sticky;
     top: 0px;
     width: 324px;
     float: left;
