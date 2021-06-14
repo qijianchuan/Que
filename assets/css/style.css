@@ -332,7 +332,7 @@ time {
 aside {
     position: sticky;
     position:-webkit-sticky;
-    top:0px;
+    top: 0px;
     width: 324px;
     float: left;
     margin-left: 16px;
