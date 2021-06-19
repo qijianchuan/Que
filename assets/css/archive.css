@@ -224,9 +224,6 @@ header ul li {
     display: table;
     margin: 0 auto;
     background: #fff;
-    -moz-box-shadow: 0 5px 20px #CCCCCC;
-    -webkit-box-shadow: 0 5px 20px #CCCCCC;
-    box-shadow: 0 5px 20px #CCCCCC;
 }
 
 .about {
