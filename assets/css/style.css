@@ -245,6 +245,9 @@ time {
     display: inline-block;
     border-left: 3px solid #0BC5EB;
     padding-left: 10px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 
 .item-title a:hover {
