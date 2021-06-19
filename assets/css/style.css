@@ -228,7 +228,7 @@ time {
 }
 
 .article-item-ul>li:hover {
-    height: 120px;
+    height: auto;
     padding: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     display: inline-block;
@@ -260,6 +260,7 @@ time {
 }
 
 .item-bottom {
+    height: 20px;
     font-size: 12px;
     font-weight: bold;
 }
