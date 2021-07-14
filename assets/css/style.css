@@ -447,3 +447,24 @@ footer ul li {
     display: inline-block;
     margin-left: 20px;
 }
+
+.answer{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.comment-unit{
+    background-color: #f5f6f7;
+    margin-top: 20px;
+    padding: 20px
+}
+.comment-mb{
+    margin-top: 20px;
+}
+
+.block-related-articles,.block-random-articles{
+    margin-top: 20px;
+    background-color: #fff;
+}
+
