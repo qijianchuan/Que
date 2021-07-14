@@ -27,11 +27,22 @@
                                 <h1 class="item-title"><a href="{{post.url|relative_url}}">{{ post.title }}</a></h1>
                             </article>
                             <article class="item-middle">
+                                {% if post.content=true %}
                                 {{post.content|strip_html|truncate: 120, '...'}}
+                                {% else %}
+                                {{post.items[0].body|strip_html|truncate: 120, '...'}}
+                                {% endif %}
                             </article>
                             <article class="item-bottom">
-                                分类：{% for category in post.categories %}<span class="cat">{{category}}</span>{% endfor %} 标签：{% for tag in post.tags %}<span class="tag">{{tag}}</span>{% endfor %}
-                                <a href="{{post.url|relative_url}}">→阅读全文</a></article>
+                                {% assign categories = post.categories|size %}
+                                {% if categories !=0 %}
+                                分类：{% for category in post.categories limit:2 %}<span class="cat">{{category}}</span>
+                                {% endfor %}{% endif %} 
+                                标签：{% for tag in post.tags %}
+                                <span class="tag">{{tag}}</span>
+                                {% endfor %}
+                                <a href="{{site.url}}{{page.url}}">→阅读全文</a>
+                            </article>
                         </article>
                     </li>
                     {% endfor %}
