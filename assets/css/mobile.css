@@ -193,7 +193,7 @@
     .block-cats,
     .block-sponsor,
     .block-partner,
-    .block-flink {
+    .block-flink,.block-related,.block-random {
         background-color: #fff;
         margin: 20px 0;
         overflow: hidden;
@@ -242,6 +242,23 @@
         margin: 10px;
         font-size: 10px;
     }
+   
    .block-wrap img {
         width:100%;
     }
+
+    .answer{
+        background-color: #fff;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    
+    .comment-unit{
+        background-color: #f5f6f7;
+        margin-top: 20px;
+        padding: 20px
+    }
+    .comment-mb{
+        margin-top: 20px;
+    }
+    
